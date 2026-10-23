@@ -318,5 +318,5 @@ async def main():
     await asyncio.gather(run_advanced_dashboard(), telegram_listener())
 
 if __name__ == "__main__":
-        threading.Thread(target=run_flask, daemon=True).start()
+    threading.Thread(target=run_flask, daemon=True).start()
     asyncio.run(main())
